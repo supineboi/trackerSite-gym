@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Iron Pulse Gym — Unleash your strength. Explore our membership plans and join the community today." />
+    <title>Iron Pulse Gym</title>
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Kanit:wght@400;600;700;900&family=Inter:wght@400;500;600&display=swap" rel="stylesheet" />
+
+    <!-- Font Awesome -->
+    <script src="https://kit.fontawesome.com/ebae23c31b.js" crossorigin="anonymous"></script>
+
+    <!-- Stylesheet (entry point is mediaQuery which @imports style.css) -->
+    <link rel="stylesheet" href="./styles/mediaQuery.css" />
+</head>
+<body>
+
+    <!-- ==================== NAVBAR ==================== -->
+    <nav id="navBar">
+        <div id="navContent">
+            <div id="brand">
+                <i class="fa-solid fa-dumbbell brandIcon"></i>
+                <span id="brandName">Iron<span class="accent">Pulse</span></span>
+            </div>
+
+            <ul id="navLinks">
+                <li><a href="#homeSec" class="navLink active">Home</a></li>
+                <li><a href="#aboutSec" class="navLink">About</a></li>
+                <li><a href="#membershipSec" class="navLink">Membership</a></li>
+                <li><a href="#enquirySec" class="navLink">Enquiry</a></li>
+                <li><a href="#footer" class="navLink">Contact</a></li>
+            </ul>
+
+            <button id="hamburger" aria-label="Toggle navigation menu">
+                <i class="fa-solid fa-bars" id="hamIcon"></i>
+            </button>
+        </div>
+    </nav>
+
+    <!-- Mobile Nav Overlay -->
+    <div id="hamNav" class="hide">
+        <a href="#homeSec" class="hamLink">Home</a>
+        <a href="#aboutSec" class="hamLink">About</a>
+        <a href="#membershipSec" class="hamLink">Membership</a>
+        <a href="#enquirySec" class="hamLink">Enquiry</a>
+        <a href="#footer" class="hamLink">Contact</a>
+    </div>
+
+    <!-- ==================== HERO ==================== -->
+    <section id="homeSec">
+        <div id="heroOverlay"></div>
+        <div id="heroContent">
+            <p class="heroTagline">Unleash Your Strength</p>
+            <h1 class="heroTitle">IRON<span class="accent">PULSE</span> GYM</h1>
+            <p class="heroSubtitle">Train hard. Stay consistent. Transform your life.</p>
+            <a href="#membershipSec" class="ctaBtn">View Membership Plans</a>
+        </div>
+    </section>
+
+    <!-- ==================== ABOUT ==================== -->
+    <section id="aboutSec">
+        <div id="about">
+            <div id="aboutText">
+                <h2 class="sectionHeading">Who We <span class="accent">Are</span></h2>
+                <p class="aboutPara">
+                    At <strong>IronPulse Gym</strong>, we believe fitness is for everyone. Whether you're a beginner 
+                    taking your first steps or a seasoned athlete pushing your limits, our state-of-the-art 
+                    facility and expert trainers are here to support your journey.
+                </p>
+                <p class="aboutPara">
+                    With world-class equipment, group classes, personal training, and a welcoming community, 
+                    we're more than just a gym — we're your second home. Come sweat with us.
+                </p>
+                <div class="aboutStats">
+                    <div class="stat">
+                        <span class="statNumber">500+</span>
+                        <span class="statLabel">Active Members</span>
+                    </div>
+                    <div class="stat">
+                        <span class="statNumber">15+</span>
+                        <span class="statLabel">Expert Trainers</span>
+                    </div>
+                    <div class="stat">
+                        <span class="statNumber">50+</span>
+                        <span class="statLabel">Weekly Classes</span>
+                    </div>
+                </div>
+            </div>
+            <div id="aboutImg">
+                <img src="./images/about-workout.jpg" alt="Group of people working out together in the gym" />
+            </div>
+        </div>
+    </section>
+
+    <!-- ==================== MEMBERSHIP RATES ==================== -->
+    <section id="membershipSec">
+        <div id="membership">
+            <h2 class="sectionHeading">Membership <span class="accent">Plans</span></h2>
+            <p class="sectionSubtext">Choose the plan that fits your goals. All plans include locker access and free Wi-Fi.</p>
+
+            <div id="planCards">
+
+                <!-- Basic -->
+                <div class="planCard">
+                    <div class="cardImgWrap">
+                        <img src="./images/membership-weights.jpg" alt="Weight training area" />
+                    </div>
+                    <div class="cardBody">
+                        <h3 class="planName">Basic</h3>
+                        <p class="planPrice"><span class="currency">₹</span>1,499<span class="period">/mo</span></p>
+                        <ul class="planFeatures">
+                            <li><i class="fa-solid fa-check"></i> Gym floor access</li>
+                            <li><i class="fa-solid fa-check"></i> Standard equipment</li>
+                            <li><i class="fa-solid fa-check"></i> Locker room</li>
+                            <li class="excluded"><i class="fa-solid fa-xmark"></i> Group classes</li>
+                            <li class="excluded"><i class="fa-solid fa-xmark"></i> Personal trainer</li>
+                        </ul>
+                        <a href="#enquirySec" class="joinBtn" data-plan="Basic">Join Now</a>
+                    </div>
+                </div>
+
+                <!-- Standard -->
+                <div class="planCard popular">
+                    <span class="popularBadge">Most Popular</span>
+                    <div class="cardImgWrap">
+                        <img src="./images/membership-cardio.jpg" alt="Cardio workout session" />
+                    </div>
+                    <div class="cardBody">
+                        <h3 class="planName">Standard</h3>
+                        <p class="planPrice"><span class="currency">₹</span>2,799<span class="period">/mo</span></p>
+                        <ul class="planFeatures">
+                            <li><i class="fa-solid fa-check"></i> Full gym access</li>
+                            <li><i class="fa-solid fa-check"></i> All equipment</li>
+                            <li><i class="fa-solid fa-check"></i> Group classes</li>
+                            <li><i class="fa-solid fa-check"></i> Locker room</li>
+                            <li class="excluded"><i class="fa-solid fa-xmark"></i> Personal trainer</li>
+                        </ul>
+                        <a href="#enquirySec" class="joinBtn" data-plan="Standard">Join Now</a>
+                    </div>
+                </div>
+
+                <!-- Premium -->
+                <div class="planCard">
+                    <div class="cardImgWrap">
+                        <img src="./images/membership-training.jpg" alt="Personal training with dumbbells" />
+                    </div>
+                    <div class="cardBody">
+                        <h3 class="planName">Premium</h3>
+                        <p class="planPrice"><span class="currency">₹</span>4,499<span class="period">/mo</span></p>
+                        <ul class="planFeatures">
+                            <li><i class="fa-solid fa-check"></i> Full gym access</li>
+                            <li><i class="fa-solid fa-check"></i> All equipment</li>
+                            <li><i class="fa-solid fa-check"></i> Group classes</li>
+                            <li><i class="fa-solid fa-check"></i> Personal trainer (2×/week)</li>
+                            <li><i class="fa-solid fa-check"></i> Nutrition plan</li>
+                        </ul>
+                        <a href="#enquirySec" class="joinBtn" data-plan="Premium">Join Now</a>
+                    </div>
+                </div>
+
+                <!-- Annual -->
+                <div class="planCard">
+                    <div class="cardImgWrap">
+                        <img src="./images/membership-premium.jpg" alt="Premium gym atmosphere" />
+                    </div>
+                    <div class="cardBody">
+                        <h3 class="planName">Annual</h3>
+                        <p class="planPrice"><span class="currency">₹</span>32,999<span class="period">/yr</span></p>
+                        <ul class="planFeatures">
+                            <li><i class="fa-solid fa-check"></i> Everything in Premium</li>
+                            <li><i class="fa-solid fa-check"></i> 2 months free</li>
+                            <li><i class="fa-solid fa-check"></i> Guest passes (4×/yr)</li>
+                            <li><i class="fa-solid fa-check"></i> Free merchandise</li>
+                            <li><i class="fa-solid fa-check"></i> Priority booking</li>
+                        </ul>
+                        <a href="#enquirySec" class="joinBtn" data-plan="Annual">Join Now</a>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- ==================== ENQUIRY FORM ==================== -->
+    <section id="enquirySec">
+        <div id="enquiryOverlay"></div>
+        <div id="enquiry">
+            <h2 class="sectionHeading light">Get In <span class="accent">Touch</span></h2>
+            <p class="sectionSubtext light">Interested in joining? Fill out the form and we'll get back to you within 24 hours.</p>
+
+            <form id="enquiryForm" novalidate>
+                <div class="formRow">
+                    <div class="formGroup">
+                        <label for="firstName">First Name</label>
+                        <input type="text" id="firstName" name="firstName" placeholder="John" required />
+                        <span class="errorMsg" id="firstNameError"></span>
+                    </div>
+                    <div class="formGroup">
+                        <label for="lastName">Last Name</label>
+                        <input type="text" id="lastName" name="lastName" placeholder="Doe" required />
+                        <span class="errorMsg" id="lastNameError"></span>
+                    </div>
+                </div>
+
+                <div class="formGroup">
+                    <label for="email">Email Address</label>
+                    <input type="email" id="email" name="email" placeholder="john.doe@example.com" required />
+                    <span class="errorMsg" id="emailError"></span>
+                </div>
+
+                <div class="formGroup">
+                    <label for="membershipSelect">Membership Interested In</label>
+                    <select id="membershipSelect" name="membership" required>
+                        <option value="" disabled selected>— Select a plan —</option>
+                        <option value="Basic">Basic — ₹1,499/mo</option>
+                        <option value="Standard">Standard — ₹2,799/mo</option>
+                        <option value="Premium">Premium — ₹4,499/mo</option>
+                        <option value="Annual">Annual — ₹32,999/yr</option>
+                    </select>
+                    <span class="errorMsg" id="membershipError"></span>
+                </div>
+
+                <button type="submit" class="submitBtn">Submit Enquiry</button>
+            </form>
+
+            <!-- Success Message (hidden by default) -->
+            <div id="successMsg" class="hide">
+                <i class="fa-solid fa-circle-check"></i>
+                <h3>Thank You!</h3>
+                <p>Your enquiry has been submitted. We'll be in touch shortly.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- ==================== FOOTER ==================== -->
+    <footer id="footer">
+        <div id="footerContent">
+            <div class="footCol">
+                <div class="footBrand">
+                    <i class="fa-solid fa-dumbbell"></i>
+                    <span>Iron<span class="accent">Pulse</span></span>
+                </div>
+                <p class="footAbout">Building strength, confidence, and community — one rep at a time.</p>
+                <div class="socialIcons">
+                    <a href="#" aria-label="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
+                    <a href="#" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="#" aria-label="YouTube"><i class="fa-brands fa-youtube"></i></a>
+                    <a href="#" aria-label="Twitter / X"><i class="fa-brands fa-x-twitter"></i></a>
+                </div>
+            </div>
+
+            <div class="footCol">
+                <h4>Quick Links</h4>
+                <ul class="footLinks">
+                    <li><a href="#homeSec">Home</a></li>
+                    <li><a href="#aboutSec">About</a></li>
+                    <li><a href="#membershipSec">Membership</a></li>
+                    <li><a href="#enquirySec">Enquiry</a></li>
+                </ul>
+            </div>
+
+            <div class="footCol">
+                <h4>Contact Us</h4>
+                <ul class="footContact">
+                    <li><i class="fa-solid fa-location-dot"></i> 42 Iron Street, London, UK</li>
+                    <li><i class="fa-solid fa-phone"></i> +44 20 7946 0958</li>
+                    <li><i class="fa-solid fa-envelope"></i> hello@ironpulsegym.co.uk</li>
+                </ul>
+            </div>
+
+            <div class="footCol">
+                <h4>Opening Hours</h4>
+                <ul class="footHours">
+                    <li>Mon – Fri: <strong>5:00 AM – 11:00 PM</strong></li>
+                    <li>Saturday: <strong>7:00 AM – 9:00 PM</strong></li>
+                    <li>Sunday: <strong>8:00 AM – 6:00 PM</strong></li>
+                </ul>
+            </div>
+        </div>
+
+        <div id="footerBottom">
+            <p>&copy; 2026 IronPulse Gym. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="./scripts/script.js" defer></script>
+</body>
+</html>
